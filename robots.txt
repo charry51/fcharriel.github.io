@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fcharriel.github.io/sitemap.xml
+Sitemap: https://charry51.github.io/fcharriel.github.io/sitemap.xml
