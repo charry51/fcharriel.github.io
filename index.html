@@ -10,12 +10,15 @@
         content="Francisco Charriel Romero, Francisco Charriel, Desarrollador Junior, Programador, Técnico SMR, DAM, Portfolio, Desarrollo Web, Jaén, Úbeda">
     <meta name="author" content="Francisco Charriel Romero">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#09090b">
 
     <!-- Open Graph para redes sociales y mejor visibilidad -->
     <meta property="og:title" content="Francisco Charriel Romero | Portfolio Profesional">
     <meta property="og:description"
         content="Portfolio de Francisco Charriel Romero, Desarrollador Junior y Técnico de Sistemas.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fcharriel.github.io/">
+    <meta property="og:image" content="https://fcharriel.github.io/perfil.png">
 
     <title>Francisco Charriel Romero | Desarrollador & Técnico SMR</title>
     <!-- Favicon para mostrar el logo en pestañas y resultados de búsqueda -->
@@ -31,7 +34,7 @@
 
 <body>
 
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Navegación principal">
         <a href="#inicio" class="logo">
             <img src="Milogo.png" alt="Logo de Francisco Charriel Romero">
             <span>Francisco Charriel</span>
@@ -40,6 +43,7 @@
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#sobre-mi">Sobre mí</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
         </ul>
         <div class="hamburger">
@@ -51,12 +55,13 @@
         <div class="hero-content reveal">
             <div class="profile-container">
                 <img src="perfil.png" alt="Fotografía de perfil de Francisco Charriel Romero" class="profile-pic"
+                    loading="lazy"
                     onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fas fa-user\' style=\'font-size: 5rem; color: #09090b;\'></i>'">
             </div>
 
             <h1>Francisco Charriel Romero</h1>
-            <h2>Desarrollador Junior & Técnico SMR</h2>
-            <p class="subtitle">Especialista en Desarrollo de Aplicaciones Multiplataforma y Sistemas</p>
+            <h2>Desarrollador Multiplataforma (DAM/SMR)</h2>
+            <p class="subtitle">Construyendo ecosistemas completos: API Laravel/MySQL, web y apps nativas (Kotlin/Swift)</p>
 
             <div class="hero-buttons" style="margin-top: 2rem;">
                 <a href="mailto:francharrielromero@gmail.com" class="btn btn-primary">
@@ -74,15 +79,17 @@
                 <a href="tel:+34658214944">
                     <i class="fas fa-phone"></i> +34 658 214 944
                 </a>
-                <a href="https://www.linkedin.com/in/fcharriel/" target="_blank">
+                <a href="https://www.linkedin.com/in/fcharriel/" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
-                <a href="https://github.com/charry51" target="_blank">
+                <a href="https://github.com/charry51" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github"></i> GitHub
                 </a>
             </div>
         </div>
     </header>
+
+    <main id="contenido-principal">
 
     <section id="sobre-mi" class="section-darker">
         <div class="container">
@@ -98,13 +105,15 @@
                         <h3>Perfil Profesional</h3>
                     </div>
                     <p class="card-text">
-                        Soy estudiante de <strong>Desarrollo de Aplicaciones Multiplataforma (DAM)</strong> con base
-                        técnica en sistemas (SMR). Tengo la capacidad para resolver problemas lógicos y trabajar tanto
-                        en entornos móviles (Android/iOS) como en arquitecturas de servidor y Backend.
+                        Soy <strong>Desarrollador Multiplataforma (DAM) con base en Sistemas (SMR)</strong>, moviéndome con
+                        soltura entre el backend y el desarrollo móvil. Me gusta construir soluciones completas, desde la
+                        <strong>API REST en Laravel/MySQL</strong> hasta el cliente web y las apps nativas en
+                        <strong>Kotlin</strong> y <strong>Swift</strong>.
                     </p>
                     <p class="card-text">
-                        Mi objetivo es seguir desarrollando mi carrera profesional en el sector TI, creando software
-                        limpio, mantenible y con un alto enfoque en la experiencia de usuario.
+                        Actualmente estoy centrado en crear <strong>ecosistemas end‑to‑end</strong> como la plataforma para
+                        el Club de Rugby Úbeda Atlantes, y busco <strong>Prácticas FCT</strong> y colaboración en proyectos
+                        Open Source donde seguir creciendo como desarrollador híbrido (software + sistemas).
                     </p>
                     <div class="tags-container">
                         <span class="tag">Trabajo en equipo</span>
@@ -201,6 +210,42 @@
             </div>
         </div>
     </section>
+    
+    <section id="proyectos" class="section-darker">
+        <div class="container">
+            <h2 class="section-title reveal">Proyectos Destacados</h2>
+            <p class="section-subtitle reveal stagger-1">Algunos de los desarrollos que mejor representan mi forma de trabajar.</p>
+
+            <div class="bento-grid">
+                <div class="bento-item col-span-12 reveal stagger-2">
+                    <div class="card-header">
+                        <div class="icon-box">
+                            <img src="atlantes-logo.png" alt="Escudo Club de Rugby Úbeda Atlantes">
+                        </div>
+                        <h3>Web Oficial - Club de Rugby Úbeda Atlantes</h3>
+                    </div>
+                    <p class="card-text">
+                        Plataforma web integral desarrollada en <strong>Laravel</strong> para la gestión y visibilidad del
+                        Club de Rugby Úbeda Atlantes. Incluye <strong>landing pública</strong>, sistema de
+                        <strong>captación de jugadores</strong>, <strong>panel de administración</strong>, gestor de
+                        partidos y CMS para noticias y galería.
+                    </p>
+                    <div class="tags-container">
+                        <span class="tag">Laravel</span>
+                        <span class="tag">PHP 8</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Blade</span>
+                        <span class="tag">Glassmorphism UI</span>
+                    </div>
+                    <div class="hero-buttons" style="margin-top: 1.5rem; justify-content: flex-start;">
+                        <a href="https://github.com/charry51/AppUbedaAtlantes" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> Ver en GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="habilidades" class="section-darker">
         <div class="container">
@@ -210,40 +255,66 @@
 
             <div class="skills-grid">
                 <div class="skill-card reveal stagger-1">
-                    <i class="devicon-java-plain colored"></i>
-                    <span>Java</span>
+                    <i class="devicon-laravel-plain colored"></i>
+                    <span>Laravel</span>
                 </div>
                 <div class="skill-card reveal stagger-2">
-                    <i class="devicon-android-plain colored"></i>
-                    <span>Android</span>
-                </div>
-                <div class="skill-card reveal stagger-3">
-                    <i class="devicon-html5-plain colored"></i>
-                    <span>HTML5</span>
-                </div>
-                <div class="skill-card reveal stagger-4">
-                    <i class="devicon-css3-plain colored"></i>
-                    <span>CSS3</span>
-                </div>
-                <div class="skill-card reveal stagger-1">
                     <i class="devicon-php-plain colored"></i>
                     <span>PHP</span>
                 </div>
+                <div class="skill-card reveal stagger-3">
+                    <i class="devicon-java-plain colored"></i>
+                    <span>Java</span>
+                </div>
+                <div class="skill-card reveal stagger-4">
+                    <i class="devicon-kotlin-plain colored"></i>
+                    <span>Kotlin</span>
+                </div>
+                <div class="skill-card reveal stagger-1">
+                    <i class="devicon-swift-plain colored"></i>
+                    <span>Swift</span>
+                </div>
                 <div class="skill-card reveal stagger-2">
+                    <i class="devicon-html5-plain colored"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-card reveal stagger-3">
+                    <i class="devicon-css3-plain colored"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-card reveal stagger-4">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card reveal stagger-1">
                     <i class="devicon-mysql-plain colored"></i>
                     <span>MySQL</span>
                 </div>
-                <div class="skill-card reveal stagger-3">
+                <div class="skill-card reveal stagger-2">
                     <i class="devicon-linux-plain colored"></i>
                     <span>Linux</span>
                 </div>
-                <div class="skill-card reveal stagger-4">
+                <div class="skill-card reveal stagger-3">
                     <i class="devicon-git-plain colored"></i>
                     <span>Git</span>
+                </div>
+                <div class="skill-card reveal stagger-4">
+                    <i class="devicon-github-original"></i>
+                    <span>GitHub</span>
+                </div>
+                <div class="skill-card reveal stagger-1">
+                    <i class="devicon-androidstudio-plain colored"></i>
+                    <span>Android Studio</span>
+                </div>
+                <div class="skill-card reveal stagger-2">
+                    <i class="devicon-figma-plain colored"></i>
+                    <span>Figma</span>
                 </div>
             </div>
         </div>
     </section>
+    
+    </main>
 
     <footer>
         <p>&copy; 2026 Francisco Charriel Romero. Diseñado y programado con <i class="fas fa-heart footer-heart"></i>
