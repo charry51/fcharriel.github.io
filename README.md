@@ -1,7 +1,7 @@
 # Francisco Charriel — Portfolio Personal
 
 > Sitio web de portfolio personal alojado en GitHub Pages.  
-> 🌐 **[fcharriel.github.io]([https://fcharriel.github.io](https://charry51.github.io/fcharriel.github.io/))**
+> 🌐 **[fcharriel.github.io](https://charry51.github.io/fcharriel.github.io/)**
 
 ---
 
